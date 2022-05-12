@@ -228,5 +228,5 @@ much CPU as they can, pods together cannot consume more than 14.5 CPUs.
 
 If `kube-reserved` and/or `system-reserved` is not enforced and system daemons
 exceed their reservation, `kubelet` evicts pods whenever the overall node memory
-usage is higher than 31.5Gi or `storage` is greater than 90Gi.
+usage is higher than 31.5Gi or `storage` is less than 90Gi.
 
